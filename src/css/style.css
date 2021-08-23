@@ -1,0 +1,124 @@
+.hero {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgb(206, 45, 45);
+}
+
+/* .hero h3 {
+  font-weight: 300;
+  letter-spacing: 1px;
+ 
+} */
+
+/* .hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 2px;
+
+} */
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background: rgb(247, 243, 243);
+  overflow: hidden;
+  z-index: 8;
+  -webkit-transition: all 1s ease-in;
+  transition: all 2s ease-in;
+}
+
+
+.users {
+  padding: 2rem 0;
+  background-color: #ca7968;
+  background-image: linear-gradient(315deg, #ca7968 0%, #0c0c0c 74%);
+ 
+}
+
+.users .card {
+  margin: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 4rem 1rem;
+  border-radius: 15px;
+  -webkit-transition: all 0.27s;
+  transition: all 0.27s;
+ background-color: black;
+  
+
+  
+}
+
+.users .card_img {
+  height:11rem;
+  width: 12rem;
+  background: rgb(253, 251, 251);
+  margin: 1rem 0;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.users .card_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+    
+}
+
+.users .card_body {
+  padding: 2rem 0;
+}
+
+.users .card_body h3 {
+  color: rgb(240, 80, 80);
+  font-family:cursive;
+  text-align: center;
+}
+
+.users .card_body p {
+  font-size: 1.2rem;
+  color: #777;
+  margin: 0.7rem 0;
+  text-align: center;
+  -webkit-transition: all 0.27s;
+  transition: all 0.27s;
+  font-family: serif;
+}
+
+
+
+.users .card:hover {
+ 
+ box-shadow: 0 0 18px rgba(255, 255, 255, 0.54);
+}
+
+.users .card:hover .card_body p {
+  color: #1e90ff;
+  font-size: 1.3rem;
+}
